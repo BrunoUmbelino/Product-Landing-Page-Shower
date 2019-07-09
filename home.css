@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    min-height: 350px;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: auto auto auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+@media (max-width: 380px){
+    .container {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 16px;
+    }
+}
+
+.div-header {
+    grid-area: header;
+    top: 0;
+    position: sticky;
+}
+
+
+.div-main {
+    grid-area: main;
+    width: 70%;
+    margin: auto;
+    padding: 5vh;
+}
+
+.div-footer {
+    grid-area: footer;
+    background-color: black;
+    padding: 1.5em;
+    color: white;
+}
+
+.div-img-product{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    margin: 2vh 0 2vh 0;
+}
+
+#technical-specifications{
+    background-color: darkgrey;
+    padding: 3vh;
+    margin: 2vh 0 2vh 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#buy{
+    background-color: hsl(217, 30%, 45%);
+    padding: 3vh;
+    margin: 2vh 0 2vh 0;
+    color: white;
+}
+
+input{
+    width: 15vw;
+}
+
+.btn{
+    width: 10vw;
+    height: 5vh;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 1em;
+    font-size: 1.2em;
+}
+
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+
+img {
+    width: 20vw;
+    height: 50vh;
+}
+
+p{
+    font-size: 2em;
+}
+
+span{
+    font-size: 2.5em;
+}
