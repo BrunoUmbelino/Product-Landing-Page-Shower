@@ -17,8 +17,8 @@ body {
 
 @media (max-width: 380px){
     .container {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 16px;
+        font-size: 14px;
+        
     }
 }
 
@@ -47,20 +47,21 @@ body {
     display: flex;
     justify-content: center;
     padding: 1em;
-    margin: 2vh 0 2vh 0;
+    margin: 5vh 0 5vh 0;
+    justify-content: space-around;
 }
 
 #technical-specifications{
     background-color: darkgrey;
-    padding: 3vh;
-    margin: 2vh 0 2vh 0;
+    padding: 8vh 3vh 8vh 3vh;
+    margin: 5vh 0 5vh 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #buy{
     background-color: hsl(217, 30%, 45%);
-    padding: 3vh;
-    margin: 2vh 0 2vh 0;
+    padding: 8vh 3vh 8vh 3vh;
+    margin: 5vh 0 5vh 0;
     color: white;
 }
 
@@ -69,19 +70,26 @@ input{
 }
 
 .btn{
-    width: 10vw;
-    height: 5vh;
+    width: 5em;
+    height: 2em;
     background-color: white;
     color: red;
     cursor: pointer;
     border-radius: 5px;
     margin-left: 1em;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .btn:hover{
     background-color: red;
     color: white;
+}
+
+#buy input[type="email"]{
+    width: 50%;
+    height: 5vh;
+    margin: 1em;
+
 }
 
 img {
